@@ -3,8 +3,76 @@
 <head>
     <meta charset="UTF-8" />
     <title>Tycho's Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 700px;
+            margin: 60px auto;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(60,60,120,0.15);
+            padding: 40px 32px;
+            text-align: center;
+        }
+        h1 {
+            color: #2d3a4b;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #4a5a6a;
+            font-size: 1.2em;
+        }
+        .demo-btn {
+            margin-top: 30px;
+            padding: 14px 36px;
+            font-size: 1.1em;
+            background: #66a6ff;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .demo-btn:hover {
+            background: #89f7fe;
+            color: #2d3a4b;
+        }
+        .demo-box {
+            margin-top: 35px;
+            padding: 24px;
+            background: #f4f8fb;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(60,60,120,0.07);
+            display: none;
+            font-size: 1.1em;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Welcome to Tycho's Demo Page 🚀</h1>
+        <p>
+            This is a modern, responsive demo page.<br>
+            Click the button below to see a simple interactive demo!
+        </p>
+        <button class="demo-btn" onclick="showDemo()">Show Demo</button>
+        <div class="demo-box" id="demoBox">
+            <strong>Hello, world!</strong><br>
+            You just triggered a simple interactive demo.<br>
+            <span style="font-size:2em;">🎉</span>
+        </div>
+    </div>
+    <script>
+        function showDemo() {
+            document.getElementById('demoBox').style.display = 'block';
+        }
+    </script>
 </body>
 </html>
