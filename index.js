@@ -133,5 +133,3 @@ function resetGame() {
 // Start game
 draw();
 gameLoop();
-
-export { startGame, updateGame, drawGame };
